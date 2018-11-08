@@ -162,7 +162,7 @@
           $scope.mealPreference = "";
           $scope.notes = "";
           //Kết nối tới service của firebase, url ở đây là url app của bạn ở bước trên nhé
-          var ref = new Firebase("https://chatonline-56390.firebaseio.com/");
+          var ref = new Firebase("https://attendee-list.firebaseio.com");
           var sync = $firebase(ref);
           $scope.attendPersons = sync.$asArray(); //Lấy toàn bộ dữ liệu trong database trên Firebase, biến nó thành 1 array các object trong javascript
           $scope.sendAttend = function() {
